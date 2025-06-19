@@ -1,0 +1,32 @@
+<div class="table-container">
+  <h2>All Users</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>DOB</th>
+        <th>Address</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let user of data; let i = index">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.birthdate}}</td>
+        <td>{{user.address}}</td>
+        <td class="actions">
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+          <button class="profile-btn">Profile</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

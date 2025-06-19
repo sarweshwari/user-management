@@ -1,0 +1,65 @@
+:host {
+  display: block;
+  padding: 20px;
+  background: #f5f5f5;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.table-container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #4caf50;
+  color: white;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
+
+.actions button {
+  margin-right: 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background: #2196f3;
+}
+
+.delete-btn {
+  background: #f44336;
+}
+
+.profile-btn {
+  background: #555;
+}

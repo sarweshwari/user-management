@@ -1,0 +1,86 @@
+:host {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f0f2f5;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-group {
+  margin-bottom: 15px;
+}
+
+.profile-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.profile-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.profile-group input[readonly] {
+  background: #f9f9f9;
+  border-color: #eee;
+  cursor: default;
+}
+
+.profile-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-actions button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #2196f3;
+  color: #fff;
+  display: inline-block;
+}
+
+.save-btn,
+.cancel-btn {
+  display: none;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: #fff;
+}
+
+.cancel-btn {
+  background: #f44336;
+  color: #fff;
+}

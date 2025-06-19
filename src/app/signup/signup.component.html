@@ -1,0 +1,47 @@
+<div class="form-container">
+  <h2>Register</h2>
+
+  
+  <form (ngSubmit)="onSubmit()" #signupForm="ngForm">
+    <div class="form-group">
+      <label for="username">Full Name</label>
+      <input type="text" id="username" name="username" placeholder="Your full name" [(ngModel)]="regObj.username" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3" placeholder="Your address" [(ngModel)]="regObj.address" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com"  [(ngModel)]="regObj.email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" [(ngModel)]="regObj.password" placeholder="Choose a password" required>
+    </div>
+
+   <div class="form-group">
+    <label>Gender</label>
+    <div class="gender-group">
+        <label><input type="radio" name="gender" [(ngModel)]="regObj.gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" [(ngModel)]="regObj.gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" [(ngModel)]="regObj.gender" value="other"> Other</label>
+    </div>
+</div>
+
+
+
+    <div class="form-group">
+      <label for="birthdate">Date of Birth</label>
+      <input type="date" id="birthdate" name="birthdate" [(ngModel)]="regObj.birthdate" required>
+    </div>
+
+    <div class="button-group">
+      <button type="submit" class="signup-btn">Sign Up</button>
+      <button type="button" class="login-btn" routerLink="/login">Login</button>
+    </div>
+  </form>
+</div>

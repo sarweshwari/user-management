@@ -1,0 +1,21 @@
+<div class="login-box">
+  <h2>Log In</h2>
+  <form #dataForm="ngForm" (ngSubmit)="onSubmit()">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com"  [(ngModel)]="loginData.email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" [(ngModel)]="loginData.password" placeholder="Enter password"  required>
+
+    <button type="submit">Login</button>
+
+    <div class="options">
+      <a routerLink="/signup">Sign Up</a>
+      <a routerLink="/reset">Forgot Password?</a>
+    </div>
+
+    <div class="signup-link">
+      Don't have an account? <a routerLink="/signup">Create one</a>
+    </div>
+  </form>
+</div>

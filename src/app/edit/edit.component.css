@@ -1,0 +1,78 @@
+:host {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: #f0f2f5;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.gender-group {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #555;
+  user-select: none;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button.save-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.save-btn:hover {
+  background-color: #45a047;
+}
